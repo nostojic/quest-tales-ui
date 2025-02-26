@@ -1,0 +1,12 @@
+.home {
+  display: grid;
+  width: 100%;
+  max-width: 1080px;
+  align-items: center;
+  padding: 20px;
+  margin-inline: auto;
+}
+
+.button {
+  margin-inline: auto;
+}
