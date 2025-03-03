@@ -1,22 +1,30 @@
+import { useContext } from "react";
 import "./Header.css";
 import { Link } from "react-router";
+import { AuthContext } from "../../Contexts/AuthContext";
 
 function Header() {
+  const { user } = useContext(AuthContext);
+
   return (
     <>
-      <div className="header">
+      <header>
         <div className="header-left">
-          <h1>QuesTales</h1>
+          <p className="logo">
+            <Link to="/">QuesTales</Link>
+          </p>
         </div>
         <div className="header-middle">
           <p>Adventures</p>
         </div>
         <div className="header-right">
           <p>
-            <Link to="/login/">Login</Link>
+            <Link to={user ? "/profile" : "/login"}>
+              {user ? "Profile" : "Login"}
+            </Link>
           </p>
         </div>
-      </div>
+      </header>
     </>
   );
 }

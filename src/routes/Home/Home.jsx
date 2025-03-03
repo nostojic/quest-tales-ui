@@ -1,9 +1,12 @@
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 import "./Home.css";
 
 const Home = () => {
   return (
     <>
-      <div className="home">
+      <Header />
+      <main>
         <h2>Welcome!</h2>
         <p>
           QuesTales is a community driven choose your own adventure app for
@@ -18,7 +21,8 @@ const Home = () => {
         <a href="#" className="button">
           Get started!
         </a>
-      </div>
+      </main>
+      <Footer />
     </>
   );
 };

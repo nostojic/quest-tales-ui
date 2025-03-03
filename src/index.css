@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #1e201e;
   color: #ecdfcc;
+  font-family: monospace, serif;
 }
 
 p {
-  font-size: 2vh;
+  font-size: 1.5vh;
   margin: 20px 0px 20px 0px;
 }
 
@@ -19,7 +22,40 @@ a {
   border-style: none;
   border-radius: 8px;
   background-color: #3c3d37;
-  font-size: 2vh;
+  font-size: 1.5vh;
   padding: 15px;
   margin: 20px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  width: 1fr;
+  max-width: 1080px;
+  margin-inline: auto;
+  padding: 1em;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1080px;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-inline: auto;
+  align-items: center;
+}
+
+footer {
+  max-width: 1080px;
+  padding: 1em;
+  margin-inline: auto;
 }

@@ -1,18 +1,7 @@
-.header {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  justify-content: space-evenly;
-  max-width: 1080px;
-  width: 100%;
-  border-bottom: 2px dotted#3c3d37;
-  margin-inline: auto;
-  padding: 20px;
-  align-items: center;
-}
-
-.header p {
-  padding: 0px;
-  margin: 0px;
+.logo {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header-middle {
